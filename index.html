@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html>
-<script src="https://js.stripe.com/v2/"></script>
-<head><title>Stripe checkout</title></head>
-<body>
-Calendly test
-</body>
-</html>
+    <head>
+        <meta name='viewport' content='width=device-width' />
+    </head>
+    
+    <!-- Calendly inline widget begin -->
+    <h1>Calendly</h1>
+    <div class="calendly-inline-widget" data-auto-load="false">
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+        <script>
+        Calendly.initInlineWidget({
+            url: 'https://calendly.com/saasguru-mentoring/mentor-one-on-one?guests=uatharish88kumar+mentorconnect1@gmail.com,ammaarsaleem2017@gmail.com',
+            prefill: {
+                name: "Ammar",
+                email: "ammaarsaleem2017@gmail.com",
+                customAnswers: {
+                    a1: "Mentor Session Booking"
+                }
+            }
+        });
+        </script>
+    </div>
+    <!-- Calendly inline widget end -->
+    </html>
